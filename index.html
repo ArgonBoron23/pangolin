@@ -5,31 +5,39 @@
 </head>
 
 <style>
+
+html{
+
+scroll-behavior: smooth;
+}
+
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 15%;
+  margin: 0px;
+  padding: 0px;
+  width: 21%;
   background-color: #6AD5CB;
-  position: fixed;
-  height: 100%;
+  position: absolute;
+  height: 200%;
   overflow: auto;
+  border-radius: 15px;
+  
 }
 
 li a {
   display: block;
-  color: #000;
-  padding: 3vw 16px;
+  color: white;
+  padding: 1.3vw 1.5vw;
   text-decoration: none;
-   font: 2vw verdana, sans-serif;
+   font: 1.5vw verdana, sans-serif;
    text-align: center;
+
    
 }
 
 
 li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
+  color: #F2E8E9;
 }
 
 .para {
@@ -67,7 +75,7 @@ font: 2.1vw verdana, sans-serif;
    -moz-column-count: 2; /* Firefox */
    column-count: 2;
    margin-left: 20%;
-   column-rule: 1px solid lightblue;
+   column-rule: 1px solid #D6F8D6;
    text-align: center;
    
 
@@ -76,18 +84,37 @@ font: 2.1vw verdana, sans-serif;
 .regular {
 	font: 1.4vw verdana, sans-serif;
 	text-align: justify;
-	margin-left: 10%;
-	padding:1px 16px;
+	margin-left: 22%;
+	padding:0px 60px 0px 0px;
+	height:600px;
+	color: black;
+	
+	}
+	
+	.regular p {
+	font: 1.4vw verdana, sans-serif;
+	text-align: justify;
+	margin-left: 0%;
+	padding:0px 30px 0px 0px;
 	height:600px;
 	color: black;
 	
 }
 
-.col {
+.col{
 	font: 1.4vw verdana, sans-serif;
-	text-align: right;
+	text-align: left;
 	margin-left: 0%;
 	padding:1px 0px;
+	height:0px;
+	color: black;
+}
+
+.col p{
+	font: 1.4vw verdana, sans-serif;
+	text-align: justify;
+	margin-left: 0%;
+	padding:1vw 0px;
 	height:0px;
 	color: black;
 	
@@ -101,16 +128,25 @@ font: 2vw verdana, sans-serif;
 	margin-top: 15%;
 	padding:10vw 16px 0px 0px;
 	height:0px;
-	color: #6AD5CB;
+	color: #00A8AA;
 	column-span: none;
 }
 
-.regular p {
-text-align: right;
+h3{
+font: 1.4vw verdana, sans-serif;
+	text-align: left;
+	margin-left: 0%;
+	margin-top: 0%;
+	padding:5vw 16px 0px 0px;
+	height:0px;
+	color: #00A8AA;
+	column-span: none;
 }
 
-.columns p {
-	text-align: left;
+
+
+.top {
+	text-align: center;
 
 }
 
@@ -123,16 +159,27 @@ text-align: right;
 	text-align: center;
 }
 
+.scroll {
+scroll-behavior: smooth;
+
+}
+
 
 </style>
 
-<body>
+<body style = "background-color: #F2E8E9">
 
 <ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#HeadOne">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
+	<li><a href="#summary">Self Summary</a></li>
+	<li><a href="#importance">Important Parts of a Relationship</a></li>
+	<li><a href="#contact">My Most Influential Person</a></li>
+    <li><a href="#contact">The First Thing People Notice About Me</a></li>
+	<li><a href="#about">Three Best Skills</a></li>
+	<li><a href="#about">Dislikes</a></li>
+	<li><a href="#contact">What I Can Bring to a Relationship</a></li>
+	<li><a href="#about">How I Spend My Free Time</a></li>
+	<li><a href="#about">Things I Can Not Live Without</a></li>
+	<li><a href="#about">Favourites</a></li>
 </ul>
 
 
@@ -144,33 +191,36 @@ text-align: right;
 		
 		<p><font face = "Georgia"><i>Meet Manjunath</i></font></p>
 		<p><font color = "#00A8AA" style = "text-align:center;"><b>The Indian Pangolin</b></font></p>
-		<p><font style = "font:1.7vw verdana;text-align:center;">| 3 ・ M ・ Uttar Pradesh, India |</font></p>
+		<p><font style = "font:1.7vw verdana;text-align:center;">| 8 ・ M ・ Uttar Pradesh, India |</font></p>
 		
 		</div>
 		
 		
 		
 	
-	<img class = "profile" src = "https://i.pinimg.com/originals/7f/36/2d/7f362defc8d0c1603b6711f1832f1e68.jpg" style="width:auto;height:30vw;"></img>
+	<img class = "profile" src = "https://i.pinimg.com/originals/7f/36/2d/7f362defc8d0c1603b6711f1832f1e68.jpg" style="border-radius: 10px;width:auto;height:30vw; "></img>
 	
-	
+	<section id = "summary">
 	<h2><font><u><b>My Self Summary</b></u></font></h2>
-	<p><font class = "col">I am a rather shy, nervous, but resilient pangolin. I have been in Uttar Pradesh since I was born. For the past year, I have been working as an exterminator and have been enjoying every bit of it. I have always been very introverted but am finally ready to uncurl and find someone to settle down with. </font></p>
+	<font class = "col"><p>I am a rather shy, nervous, but resilient pangolin. I was born in Southern Pakistan and moved to India when my parents went missing. I have been working as an exterminator and have been enjoying every bit of it. I have always been very introverted but am finally ready to uncurl and find someone to settle down with. </p></font>
+	</section>
+	
 	</div>
 	
-	
-	
-	
-	
-	
 </div>
+
 
 <div class = "regular">
 
 
 <font>
 
-<p>pokemon</p>
+<section id = "importance">
+<h3><font><b>The most important thing I am looking for in a relationship:</b></font></h3>
+</section>
+
+<font class = "regular"><p>[Insert Text]</p></font>
+	
 
 </font>
 
@@ -188,6 +238,5 @@ text-align: right;
 </div>
 
        
-	
 </body>
 </html>
